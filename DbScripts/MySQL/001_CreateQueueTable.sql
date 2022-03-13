@@ -1,29 +1,11 @@
 -- TO DO - SE E' PRESENTE LO SCRIPT - STOP EXECUTION
 INSERT INTO `DbScriptMigration` (`MigrationId`, `MigrationName`, `MigrationDate`)
-SELECT * FROM (SELECT UUID(),'001_001_CreateQueueTable',NOW()) AS tmp
+SELECT * FROM (SELECT UUID(),'001_CreateQueueTable',NOW()) AS tmp
 WHERE NOT EXISTS (
-    SELECT `MigrationName` FROM `DbScriptMigration` WHERE `MigrationName` = '001_001_CreateQueueTable'
+    SELECT `MigrationName` FROM `DbScriptMigration` WHERE `MigrationName` = '001_CreateQueueTable'
 ) LIMIT 1;
 
 
-CREATE TABLE `queues` (
-  `id` bigint NOT NULL AUTO_INCREMENT,
-  `execute_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `parent_id` bigint DEFAULT NULL,
-  `type_id` int NOT NULL,
-  `action_type_id` int NOT NULL,
-  `status_id` int NOT NULL,
-  `payload` varchar(1000) DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `fk_queue_status_idx` (`status_id`),
-  KEY `fk_queue_type_idx` (`type_id`),
-  KEY `fk_queue_action_idx` (`action_type_id`),
-  KEY `fk_queue_parent_idx` (`parent_id`),
-  CONSTRAINT `fk_queue_action` FOREIGN KEY (`action_type_id`) REFERENCES `queue_actions` (`id`),
-  CONSTRAINT `fk_queue_parent` FOREIGN KEY (`parent_id`) REFERENCES `queues` (`id`),
-  CONSTRAINT `fk_queue_status` FOREIGN KEY (`status_id`) REFERENCES `queue_status` (`id`),
-  CONSTRAINT `fk_queue_type` FOREIGN KEY (`type_id`) REFERENCES `queue_types` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 CREATE TABLE `queue_types` (
   `id` int NOT NULL,
@@ -46,6 +28,25 @@ CREATE TABLE `queue_actions` (
   `name` varchar(45) NOT NULL,
   `description` varchar(250) DEFAULT NULL,
   PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `queues` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `execute_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `parent_id` bigint DEFAULT NULL,
+  `type_id` int NOT NULL,
+  `action_id` int NOT NULL,
+  `status_id` int NOT NULL,
+  `payload` varchar(1000) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `fk_queue_status_idx` (`status_id`),
+  KEY `fk_queue_type_idx` (`type_id`),
+  KEY `fk_queue_action_idx` (`action_id`),
+  KEY `fk_queue_parent_idx` (`parent_id`),
+  CONSTRAINT `fk_queue_action` FOREIGN KEY (`action_id`) REFERENCES `queue_actions` (`id`),
+  CONSTRAINT `fk_queue_parent` FOREIGN KEY (`parent_id`) REFERENCES `queues` (`id`),
+  CONSTRAINT `fk_queue_status` FOREIGN KEY (`status_id`) REFERENCES `queue_status` (`id`),
+  CONSTRAINT `fk_queue_type` FOREIGN KEY (`type_id`) REFERENCES `queue_types` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 
