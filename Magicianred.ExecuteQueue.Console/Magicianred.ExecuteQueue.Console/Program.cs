@@ -1,12 +1,19 @@
-﻿using System;
+﻿using Magicianred.ExecuteQueue.ConsoleApp.Extensions;
+using Microsoft.Extensions.Hosting;
+using System.Threading.Tasks;
 
-namespace Magicianred.ExecuteQueue.Console
+namespace Magicianred.ExecuteQueue.ConsoleApp
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var host = CreateHostBuilder(args).Build();
+            await host.RunAsync();
         }
+
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+                .UseStartup<Startup>(); // our new method!
     }
 }
