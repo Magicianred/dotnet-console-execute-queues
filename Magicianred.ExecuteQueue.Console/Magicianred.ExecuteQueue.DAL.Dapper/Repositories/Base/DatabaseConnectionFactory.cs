@@ -5,7 +5,7 @@ using System;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace Magicianred.ExecuteQueue.DAL.Dapper.Repositories.Base
+namespace Magicianred.ExecuteQueue.Runner.DAL.Dapper.Repositories.Base
 {
     public class DatabaseConnectionFactory : IDatabaseConnectionFactory
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Magicianred.ExecuteQueue.DAL.Dapper.Models
+namespace Magicianred.ExecuteQueue.Runner.DAL.Dapper.Models
 {
     public class SqlQueue
     {

@@ -5,11 +5,21 @@ VisualStudioVersion = 16.0.32126.315
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magicianred.ExecuteQueue.ConsoleApp", "Magicianred.ExecuteQueue.Console\Magicianred.ExecuteQueue.ConsoleApp.csproj", "{FEEE2C52-87C5-45A3-BA77-45B7AA90AC17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magicianred.ExecuteQueue.Domain", "Magicianred.ExecuteQueue.Core\Magicianred.ExecuteQueue.Domain.csproj", "{18F6EC98-925E-49B0-A9A9-4CC61DE8D963}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magicianred.ExecuteQueue.Domain", "Magicianred.ExecuteQueue.Core\Magicianred.ExecuteQueue.Domain.csproj", "{18F6EC98-925E-49B0-A9A9-4CC61DE8D963}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magicianred.ExecuteQueue.DAL.Dapper", "Magicianred.ExecuteQueue.DAL.Dapper\Magicianred.ExecuteQueue.DAL.Dapper.csproj", "{BABD4134-E6DE-4608-9D62-2C61D5D6E90C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magicianred.ExecuteQueue.Runner.DAL.Dapper", "Magicianred.ExecuteQueue.DAL.Dapper\Magicianred.ExecuteQueue.Runner.DAL.Dapper.csproj", "{BABD4134-E6DE-4608-9D62-2C61D5D6E90C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magicianred.ExecuteQueue.BL", "Magicianred.ExecuteQueue.BL\Magicianred.ExecuteQueue.BL.csproj", "{F8853E76-0381-4078-908E-BAEED807BCAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magicianred.ExecuteQueue.BL", "Magicianred.ExecuteQueue.BL\Magicianred.ExecuteQueue.BL.csproj", "{F8853E76-0381-4078-908E-BAEED807BCAA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magicianred.ExecuteQueue.Runner", "Magicianred.ExecuteQueue.Runner\Magicianred.ExecuteQueue.Runner.csproj", "{2BB8C28B-D6CF-4B9F-95B6-E590386D8C85}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magicianred.ExecuteQueue.Log.DAL.Ef.MySql", "Magicianred.ExecuteQueue.Log.DAL.Ef.MySql\Magicianred.ExecuteQueue.Log.DAL.Ef.MySql.csproj", "{1D916F47-6596-4CE7-AF14-5D043AA28DE2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magicianred.ExecuteQueue.Runner.DAL.Ef.MySql", "Magicianred.ExecuteQueue.Runner.DAL.Ef.MySql\Magicianred.ExecuteQueue.Runner.DAL.Ef.MySql.csproj", "{8F9B4A52-E80B-4704-A5A8-5A9E3E5A46EF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magicianred.ExecuteQueue.Log.DAL.Dapper", "Magicianred.ExecuteQueue.Log.DAL.Dapper\Magicianred.ExecuteQueue.Log.DAL.Dapper.csproj", "{34FECC3B-E30F-4CB2-A3BB-02EA4826F6F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp.Tests.Integration", "ConsoleApp.Tests.Integration\ConsoleApp.Tests.Integration.csproj", "{705003B1-7A27-4324-B34C-79796B2F5D02}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +43,26 @@ Global
 		{F8853E76-0381-4078-908E-BAEED807BCAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8853E76-0381-4078-908E-BAEED807BCAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8853E76-0381-4078-908E-BAEED807BCAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BB8C28B-D6CF-4B9F-95B6-E590386D8C85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BB8C28B-D6CF-4B9F-95B6-E590386D8C85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BB8C28B-D6CF-4B9F-95B6-E590386D8C85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BB8C28B-D6CF-4B9F-95B6-E590386D8C85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D916F47-6596-4CE7-AF14-5D043AA28DE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D916F47-6596-4CE7-AF14-5D043AA28DE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D916F47-6596-4CE7-AF14-5D043AA28DE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D916F47-6596-4CE7-AF14-5D043AA28DE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F9B4A52-E80B-4704-A5A8-5A9E3E5A46EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F9B4A52-E80B-4704-A5A8-5A9E3E5A46EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F9B4A52-E80B-4704-A5A8-5A9E3E5A46EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F9B4A52-E80B-4704-A5A8-5A9E3E5A46EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34FECC3B-E30F-4CB2-A3BB-02EA4826F6F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34FECC3B-E30F-4CB2-A3BB-02EA4826F6F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34FECC3B-E30F-4CB2-A3BB-02EA4826F6F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34FECC3B-E30F-4CB2-A3BB-02EA4826F6F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{705003B1-7A27-4324-B34C-79796B2F5D02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{705003B1-7A27-4324-B34C-79796B2F5D02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{705003B1-7A27-4324-B34C-79796B2F5D02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{705003B1-7A27-4324-B34C-79796B2F5D02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

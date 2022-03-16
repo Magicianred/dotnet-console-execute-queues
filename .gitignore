@@ -102,27 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
-.vs/slnx.sqlite
-.vs/VSWorkspaceState.json
-.vs/dotnet-console-execute-queues/v16/.suo
-Magicianred.ExecuteQueue.Console/.vs/Magicianred.ExecuteQueue.Console/v16/.suo
-Magicianred.ExecuteQueue.Console/Magicianred.ExecuteQueue.Console/obj/Magicianred.ExecuteQueue.Console.csproj.nuget.dgspec.json
-Magicianred.ExecuteQueue.Console/Magicianred.ExecuteQueue.Console/obj/Magicianred.ExecuteQueue.Console.csproj.nuget.g.props
-Magicianred.ExecuteQueue.Console/Magicianred.ExecuteQueue.Console/obj/Magicianred.ExecuteQueue.Console.csproj.nuget.g.targets
-Magicianred.ExecuteQueue.Console/Magicianred.ExecuteQueue.Console/obj/project.assets.json
-Magicianred.ExecuteQueue.Console/Magicianred.ExecuteQueue.Console/obj/project.nuget.cache
-Magicianred.ExecuteQueue.Console/Magicianred.ExecuteQueue.Console/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs
-Magicianred.ExecuteQueue.Console/Magicianred.ExecuteQueue.Console/obj/Debug/net5.0/Magicianred.ExecuteQueue.Console.AssemblyInfo.cs
-Magicianred.ExecuteQueue.Console/Magicianred.ExecuteQueue.Console/obj/Debug/net5.0/Magicianred.ExecuteQueue.Console.AssemblyInfoInputs.cache
-Magicianred.ExecuteQueue.Console/Magicianred.ExecuteQueue.Console/obj/Debug/net5.0/Magicianred.ExecuteQueue.Console.assets.cache
-Magicianred.ExecuteQueue.Console/Magicianred.ExecuteQueue.Console/obj/Debug/net5.0/Magicianred.ExecuteQueue.Console.csproj.AssemblyReference.cache
-Magicianred.ExecuteQueue.Console/Magicianred.ExecuteQueue.Console/obj/Debug/net5.0/Magicianred.ExecuteQueue.Console.GeneratedMSBuildEditorConfig.editorconfig
-Magicianred.ExecuteQueue.Console/.vs/Magicianred.ExecuteQueue.Console/DesignTimeBuild/.dtbcache.v2
-/Magicianred.ExecuteQueue.Console/Magicianred.ExecuteQueue.BL/bin/Debug/net5.0
-/Magicianred.ExecuteQueue.Console/Magicianred.ExecuteQueue.BL/obj
-/Magicianred.ExecuteQueue.Console/Magicianred.ExecuteQueue.Console/bin/Debug/net5.0
-/Magicianred.ExecuteQueue.Console/Magicianred.ExecuteQueue.Console/obj
-/Magicianred.ExecuteQueue.Console/Magicianred.ExecuteQueue.Core/bin/Debug/net5.0
-/Magicianred.ExecuteQueue.Console/Magicianred.ExecuteQueue.Core/obj
-/Magicianred.ExecuteQueue.Console/Magicianred.ExecuteQueue.DAL.Dapper/bin/Debug/net5.0
-/Magicianred.ExecuteQueue.Console/Magicianred.ExecuteQueue.DAL.Dapper/obj
+
+
+.vs/
+obj/
+bin/
+/Magicianred.ExecuteQueue.Console/Magicianred.ExecuteQueue.Console/appsettings.Development.json

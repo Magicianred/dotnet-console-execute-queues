@@ -1,10 +1,10 @@
-﻿using Magicianred.ExecuteQueue.BL.Repositories;
-using Magicianred.ExecuteQueue.DAL.Dapper.Repositories.Base;
+﻿using Magicianred.ExecuteQueue.Runner.DAL.Dapper.Repositories;
+using Magicianred.ExecuteQueue.Runner.DAL.Dapper.Repositories.Base;
 using Magicianred.ExecuteQueue.Domain.Interfaces.Repositories;
 using Magicianred.ExecuteQueue.Domain.Interfaces.Repositories.Base;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Magicianred.ExecuteQueue.DAL.Dapper.Extentions
+namespace Magicianred.ExecuteQueue.Runner.DAL.Dapper.Extentions
 {
     public static class ServiceCollectionExtensions
     {

@@ -1,0 +1,13 @@
+{
+  "ConnectionStrings": {
+    "Main": "Server=127.0.0.1;Database=my-blog;Uid=root;Pwd=rootroot3;"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "AllowedHosts": "*"
+}

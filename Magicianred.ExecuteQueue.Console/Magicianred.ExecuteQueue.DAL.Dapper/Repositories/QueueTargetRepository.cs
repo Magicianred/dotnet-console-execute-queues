@@ -2,7 +2,7 @@
 using Magicianred.ExecuteQueue.Domain.Interfaces.Services;
 using System.Collections.Generic;
 
-namespace Magicianred.ExecuteQueue.BL.Repositories
+namespace Magicianred.ExecuteQueue.Runner.DAL.Dapper.Repositories
 {
     public class QueueTargetRepository : IQueueTargetRepository
     {

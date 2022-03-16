@@ -1,11 +1,11 @@
-﻿using Magicianred.ExecuteQueue.DAL.Dapper.Models;
+﻿using Magicianred.ExecuteQueue.Runner.DAL.Dapper.Models;
 using Magicianred.ExecuteQueue.Domain.Interfaces.Models;
 using Magicianred.ExecuteQueue.Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Magicianred.ExecuteQueue.DAL.Dapper.Factories
+namespace Magicianred.ExecuteQueue.Runner.DAL.Dapper.Factories
 {
     /// <summary>
     /// Convert sql entity to domain
